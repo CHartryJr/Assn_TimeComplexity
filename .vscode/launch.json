@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch TimeComplexity",
+            "request": "launch",
+            "mainClass": "TimeComplexity",
+            "projectName": "Assn_TimeComplexity_d2146241"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "program": "DIYAppcontroller.java",
+            "args": [
+                "6789"
+            ]
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "program": "DIYAppWorker.java",
+            "args": [
+                "localhost",
+                "6789"
+            ]
+        }
+    ]
+}
