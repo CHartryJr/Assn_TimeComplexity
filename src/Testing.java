@@ -53,7 +53,7 @@ public class Testing {
     } 
     @Test
     public void writingTest() {
-        String location  = FileSystems.getDefault().getPath(".").toAbsolutePath().toString()+("/" + "WrittingrTest.txt");
+        String location  = FileSystems.getDefault().getPath("user.dir").toAbsolutePath().toString()+("/" + "WrittingrTest.txt");
         Assert.assertTrue(TimeComplexity.writedToFile(location,correct));
        Assert.assertTrue(TimeComplexity.writedToFile(location,"this is the testing page ignore"));
     } 

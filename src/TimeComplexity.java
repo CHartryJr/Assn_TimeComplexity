@@ -9,7 +9,6 @@ public class TimeComplexity {
     private static int[] arr;
 
     public static void main(String[] args) {
-        
         arr = new int[inputs] ;
 
     }
