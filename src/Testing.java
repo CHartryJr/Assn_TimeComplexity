@@ -1,19 +1,36 @@
 import java.nio.file.FileSystems;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
+
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
 public class Testing {
-    private  static int[] arr;
-    String correct;
+    private final int  NUM = 10;
+    private  int[] arr;
+    private String correct ="[";
     
     /**
      * 
      */
     @BeforeEach
     public void initEach(){
-        arr = new int[] { 7, 9, 0, 4, 1, 23 };
-        correct = "[ 0 1 4 7 9 23 ]";
+        Random rand = new Random();
+        int limit = rand.nextInt((NUM -3))+3;
+        ArrayList <Integer>converter = new ArrayList<Integer>();
+        arr = new int[limit] ;
+        for(int i =0; i < limit; i++){
+            int x = rand.nextInt(limit);
+            converter.add(x);
+            arr[i] = x;
+        }
+        Collections.sort(converter);
+        for (Integer x : converter) {
+            correct+= (" "+ x);
+        }
+        correct += " ]";
     }
 
     @Test
@@ -53,7 +70,7 @@ public class Testing {
     } 
     @Test
     public void writingTest() {
-        String location  = FileSystems.getDefault().getPath("user.dir").toAbsolutePath().toString()+("/" + "WrittingrTest.txt");
+        String location  = FileSystems.getDefault().getPath("user.dir").toAbsolutePath().toString()+"/WrittingrTest.txt";
         Assert.assertTrue(TimeComplexity.writedToFile(location,correct));
        Assert.assertTrue(TimeComplexity.writedToFile(location,"this is the testing page ignore"));
     } 

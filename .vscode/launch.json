@@ -5,13 +5,6 @@
             "name": "Launch TimeComplexity",
             "request": "launch",
             "mainClass": "TimeComplexity",
-            "projectName": "Assn_TimeComplexity_d2146241"
-        },
-        {
-            "type": "java",
-            "name": "Launch TimeComplexity",
-            "request": "launch",
-            "mainClass": "TimeComplexity",
             "projectName": "Assn_TimeComplexity",
             "cwd": "${workspaceFolder}"
         }
