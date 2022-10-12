@@ -1,7 +1,7 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-
+import java.nio.file.FileSystems;
 
 public class TimeComplexity {
     private static final  int MULTIPLIER = 10;
@@ -10,7 +10,8 @@ public class TimeComplexity {
 
     public static void main(String[] args) {
         arr = new int[inputs] ;
-
+        String location  = FileSystems.getDefault().getPath("resultsForTime").toAbsolutePath().toString()+"/Results.txt";
+        String Message ="";
     }
 
     protected static boolean writedToFile(String fileLocation, String message) {

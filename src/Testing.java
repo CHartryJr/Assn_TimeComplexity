@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
 public class Testing {
-    private final int  NUM = 10;
+    private final int  NUM = 1000;
     private  int[] arr;
     private String correct ="[";
     
@@ -70,9 +70,11 @@ public class Testing {
     } 
     @Test
     public void writingTest() {
-        String location  = FileSystems.getDefault().getPath("user.dir").toAbsolutePath().toString()+"/WrittingrTest.txt";
+        String location  = FileSystems.getDefault().getPath("resultsForTime").toAbsolutePath().toString()+"/WrittingrTest2.txt";
+        // for tha above line the file will be sent to the 
+        // red hat app support workspace or whatever test support extention's 
+        // workspace
         Assert.assertTrue(TimeComplexity.writedToFile(location,correct));
        Assert.assertTrue(TimeComplexity.writedToFile(location,"this is the testing page ignore"));
     } 
-
 }
