@@ -13,15 +13,15 @@ class SortingAlgos {
 		System.out.print(arr + "]");
 		return arr;
 	}
-
+	//nlogn
 	public  static void mergeSort(int[] arr) {
 		mergeSort(arr, 0, arr.length - 1);
 	}
-
+//nlogn
 	public static void quickSort(int[] list) {
 		quickSort(list, 0, list.length - 1);
 	}
-
+	
 	protected  static void quickSort(int[] list, int low, int high) {
 		if (list.length <= high) {
 			System.out.print("\n");
@@ -96,7 +96,7 @@ class SortingAlgos {
 			left++;
 		}
 	}
-
+//n^2
 	public static void bubbleSort(int[] numbers) {
 		for (int i = 0; i < numbers.length - 1; i++) {
 			for (int f = 0; f < numbers.length - 1; f++) {
@@ -108,7 +108,7 @@ class SortingAlgos {
 			}
 		}
 	}
-
+//n^2
 	public static void selectionSort(int[] numbers) {
 		for (int i = 0; i < numbers.length; i++) {
 
@@ -121,7 +121,7 @@ class SortingAlgos {
 			}
 		}
 	}
-
+//n^2
 	public static void insertionSort(int[] numbers) {
 		int len = numbers.length;
 		for (int i = 1; i < len; i++) {
