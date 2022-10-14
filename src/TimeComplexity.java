@@ -5,33 +5,219 @@ import java.nio.file.FileSystems;
 import java.util.Random;
 
 public class TimeComplexity {
-    private static final int MULTIPLIER = 10;
-    private static final int MAX_INTERVALS = 4;
-    private static int inputs = 1000000;
-    
+    private static final int MULTIPLIER = 5;
+    private static final int MAX_INTERVALS = 10;
+    private static int inputs = 1000;
+
     public static void main(String[] args) {
-        String location = FileSystems.getDefault().getPath("resultsForTime").toAbsolutePath().toString();
-        String Message = "";
+        inputs *= MULTIPLIER;
         long startTime;
         long endTime;
-        for (int i = 0; i < MAX_INTERVALS; i++) {
-            int[] sorted = createlist(true);
-            int[] unsorted = createlist(false);
+        for (int j = 0; j < MAX_INTERVALS; j++) {
+
             for (SortingAlgos.sortNames x : SortingAlgos.sortNames.values()) {
-                switch (x) {
-                    case SELECTION:
-                        break;
-                    case INSERTION:
-                        break;
-                    case BUBBLE:
-                        break;
-                    case MERGESORT:
-                        break;
-                    case QUICKSORT:
-                        break;
+                long averageU = 0;
+                long averageS = 0;
+                long averageD = 0;
+                String message = "";
+                String location = FileSystems.getDefault().getPath("resultsForTime").toAbsolutePath().toString();
+                for (int i = 0; i < MAX_INTERVALS; i++) {
+                    int[] sorted = createlist(0);
+                    int[] unsorted = createlist(1);
+                    int[] duplicate = createlist(2);
+
+                    switch (x) {
+                        case SELECTION:
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(unsorted);
+                            endTime = System.nanoTime();
+                            message += ("Time With Unsorted Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageU += endTime - startTime;
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(sorted);
+                            endTime = System.nanoTime();
+                            message += ("Time With Sorted Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageS += endTime - startTime;
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(duplicate);
+                            endTime = System.nanoTime();
+                            message += ("Time With Duplicate Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageD += endTime - startTime;
+                            location = i == 0 ? location += "/SelectionSortTime.txt" : location;
+                            writedToFile((location), message);
+                            break;
+
+                        case INSERTION:
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(unsorted);
+                            endTime = System.nanoTime();
+                            message += ("Time With Unsorted Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageU += endTime - startTime;
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(sorted);
+                            endTime = System.nanoTime();
+                            message += ("Time With Sorted Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageS += endTime - startTime;
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(duplicate);
+                            endTime = System.nanoTime();
+                            message += ("Time With Duplicate Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageD += endTime - startTime;
+                            location = i == 0 ? location += "/InsertionSortTime.txt" : location;
+                            writedToFile((location), message);
+                            break;
+
+                        case MERGESORT:
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(unsorted);
+                            endTime = System.nanoTime();
+                            message += ("Time With Unsorted Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageU += endTime - startTime;
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(sorted);
+                            endTime = System.nanoTime();
+                            message += ("Time With Sorted Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageS += endTime - startTime;
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(duplicate);
+                            endTime = System.nanoTime();
+                            message += ("Time With Duplicate Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageD += endTime - startTime;
+                            location = i == 0 ? location += "/MergeSortTime.txt" : location;
+                            writedToFile((location), message);
+                            break;
+
+                        case BUBBLE:
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(unsorted);
+                            endTime = System.nanoTime();
+                            message += ("Time With Unsorted Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageU += endTime - startTime;
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(sorted);
+                            endTime = System.nanoTime();
+                            message += ("Time With Sorted Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageS += endTime - startTime;
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(duplicate);
+                            endTime = System.nanoTime();
+                            message += ("Time With Duplicate Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageD += endTime - startTime;
+                            location = i == 0 ? location += "/BubbleSortTime.txt" : location;
+                            writedToFile((location), message);
+                            break;
+
+                        case QUICKSORT:
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(unsorted);
+                            endTime = System.nanoTime();
+                            message += ("Time With Unsorted Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageU += endTime - startTime;
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(sorted);
+                            endTime = System.nanoTime();
+                            message += ("Time With Sorted Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageS += endTime - startTime;
+                            startTime = System.nanoTime();
+                            SortingAlgos.selectionSort(duplicate);
+                            endTime = System.nanoTime();
+                            message += ("Time With Duplicate Inputs:" + inputs
+                                    + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                            message += ("second: " + (endTime - startTime) / 1000000000) + "\n";
+                            message += ("minutes: " + ((endTime - startTime) / 1000000000) / 60) + "\n";
+                            message += ("hours: " + (((endTime - startTime) / 1000000000) / 60) / 60) + "\n";
+                            message += ("days: " + ((((endTime - startTime) / 1000000000) / 60) / 60) / 24) + "\n\n";
+                            averageD += endTime - startTime;
+                            location = i == 0 ? location += "/QuickSortTime.txt" : location;
+                            writedToFile((location), message);
+                            break;
+                    }
                 }
+                message += ("\nAeverage Time =======================================\nSORTED::::\nSeconds: "
+                        + ((averageS / 1000000000) / MAX_INTERVALS));
+                message += "\n Minutes: " + ((averageS / 1000000000) / 60) / MAX_INTERVALS;
+                message += "\n Hours: " + (((averageS / 1000000000) / 60) / 60) / MAX_INTERVALS;
+                message += "\n Days: " + ((((averageS / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
+                message += ("\nUNSORTED::::\nSeconds: " + ((averageU / 1000000000) / MAX_INTERVALS));
+                message += "\n Minutes: " + ((averageU / 1000000000) / 60) / MAX_INTERVALS;
+                message += "\n Hours: " + (((averageU / 1000000000) / 60) / 60) / MAX_INTERVALS;
+                message += "\n Days: " + ((((averageU / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
+                message += ("\nDuplicate::::\nSeconds: " + ((averageU / 1000000000) / MAX_INTERVALS));
+                message += "\n Minutes: " + ((averageD / 1000000000) / 60) / MAX_INTERVALS;
+                message += "\n Hours: " + (((averageD / 1000000000) / 60) / 60) / MAX_INTERVALS;
+                message += "\n Days: " + ((((averageD / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
+                writedToFile(location, message);
             }
-            inputs *= MULTIPLIER;
         }
     }
 
@@ -49,17 +235,11 @@ public class TimeComplexity {
         return false;
     }
 
-    private static int[] createlist(boolean sorted) {
+    private static int[] createlist(int cat) {
         int[] arr = new int[inputs];
-        if (sorted) {
-            for (int i = 0; i < inputs; i++) {
-                arr[i] = i;
-            }
-        } else {
-            Random rand = new Random();
-            for (int i = 0; i < inputs; i++) {
-                arr[i] = rand.nextInt();
-            }
+        Random rand = new Random();
+        for (int i = 0; i < inputs; i++) {
+            arr[i] = cat == 0 ? i : cat == 1 ? rand.nextInt() : 1;
         }
         return arr;
     }
