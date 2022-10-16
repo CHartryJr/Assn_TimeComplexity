@@ -30,7 +30,7 @@ public class TimeComplexity {
                                         int[] unsorted = createlist(1);
                                         int[] duplicate = createlist(2);
                                         int[] reversed = createlist(3);
-                                        message +="\n >>>>>>>>>>>>>>>Iteration "+(i+1)+" of input size "+inputs+". <<<<<<<<<<<<<<<<<<<<\n";
+                                        message +="\n >>>>>>>>>>>>>>>Iteration "+(i+1)+" of input size "+inputs+"<<<<<<<<<<<<<<<<<<<<\n";
 
                                         switch (x) {
                                                 case SELECTION:
@@ -447,7 +447,7 @@ public class TimeComplexity {
                                         }
                                         message="";
                                 }
-                                message += ("\n\nAeverage Time For Input: " + inputs
+                                message += ("\nAeverage Time For Input: " + inputs
                                                         + "\n======================================================================\nSORTED::::\nSeconds: "
                                                         + ((averageS / 1000000000) / MAX_INTERVALS));
                                         message += "\n Minutes: " + ((averageS / 1000000000) / 60) / MAX_INTERVALS;
