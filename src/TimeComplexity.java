@@ -5,29 +5,32 @@ import java.nio.file.FileSystems;
 import java.util.Random;
 
 public class TimeComplexity {
-        private static final int MULTIPLIER = 10;
-        private static final int MAX_INTERVALS = 5;
+        private static final int BASE = 10;
+        private static final int MAX_INTERVALS = 10;
+        private static final int POWER = 4;
         private static int inputs = 10;
 
         public static void main(String[] args) {
 
                 long startTime;
                 long endTime;
-                for (int j = 0; j < 10; j++) {
+                for (int h = 0; h <= POWER; h++) {
 
                         for (SortingAlgos.sortNames x : SortingAlgos.sortNames.values()) {
                                 long averageU = 0;
                                 long averageS = 0;
                                 long averageD = 0;
+                                long averageR = 0;
                                 String message = "";
                                 String location = FileSystems.getDefault().getPath("resultsForTime").toAbsolutePath()
                                                 .toString();
-
                                 for (int i = 0; i < MAX_INTERVALS; i++) {
+                                        
                                         int[] sorted = createlist(0);
                                         int[] unsorted = createlist(1);
                                         int[] duplicate = createlist(2);
                                         int[] reversed = createlist(3);
+                                        message +="\n >>>>>>>>>>>>>>>Iteration "+(i+1)+" of input size "+inputs+". <<<<<<<<<<<<<<<<<<<<\n";
 
                                         switch (x) {
                                                 case SELECTION:
@@ -106,10 +109,11 @@ public class TimeComplexity {
                                                                         + ((((endTime - startTime) / 1000000000) / 60)
                                                                                         / 60) / 24)
                                                                         + "\n\n";
-                                                        averageD += endTime - startTime;
+                                                        averageR += endTime - startTime;
                                                         location = i == 0 ? location += "/SelectionSortTime.txt"
                                                                         : location;
                                                         writedToFile((location), message);
+                                                        
                                                         break;
 
                                                 case INSERTION:
@@ -188,10 +192,11 @@ public class TimeComplexity {
                                                                         + ((((endTime - startTime) / 1000000000) / 60)
                                                                                         / 60) / 24)
                                                                         + "\n\n";
-                                                        averageD += endTime - startTime;
+                                                        averageR += endTime - startTime;
                                                         location = i == 0 ? location += "/InsertionSortTime.txt"
                                                                         : location;
                                                         writedToFile((location), message);
+                                                       
                                                         break;
 
                                                 case MERGESORT:
@@ -269,9 +274,10 @@ public class TimeComplexity {
                                                                         + ((((endTime - startTime) / 1000000000) / 60)
                                                                                         / 60) / 24)
                                                                         + "\n\n";
-                                                        averageD += endTime - startTime;
+                                                        averageR += endTime - startTime;
                                                         location = i == 0 ? location += "/MergeSortTime.txt" : location;
                                                         writedToFile((location), message);
+                                                       
                                                         break;
 
                                                 case BUBBLE:
@@ -350,10 +356,11 @@ public class TimeComplexity {
                                                                         + ((((endTime - startTime) / 1000000000) / 60)
                                                                                         / 60) / 24)
                                                                         + "\n\n";
-                                                        averageD += endTime - startTime;
+                                                        averageR += endTime - startTime;
                                                         location = i == 0 ? location += "/BubbleSortTime.txt"
                                                                         : location;
                                                         writedToFile((location), message);
+                                                       
                                                         break;
 
                                                 case QUICKSORT:
@@ -432,31 +439,46 @@ public class TimeComplexity {
                                                                         + ((((endTime - startTime) / 1000000000) / 60)
                                                                                         / 60) / 24)
                                                                         + "\n\n";
-                                                        averageD += endTime - startTime;
+                                                        averageR += endTime - startTime;
                                                         location = i == 0 ? location += "/QuickSortTime.txt" : location;
                                                         writedToFile((location), message);
+                                                        
                                                         break;
                                         }
+                                        message="";
                                 }
-                                message += ("\n\nAeverage Time  For Run:" + j + " Interval: " + inputs
-                                                + "\n======================================================================\nSORTED::::\nSeconds: "
-                                                + ((averageS / 1000000000) / MAX_INTERVALS));
-                                message += "\n Minutes: " + ((averageS / 1000000000) / 60) / MAX_INTERVALS;
-                                message += "\n Hours: " + (((averageS / 1000000000) / 60) / 60) / MAX_INTERVALS;
-                                message += "\n Days: " + ((((averageS / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
-                                message += ("\nUNSORTED::::\nSeconds: " + ((averageU / 1000000000) / MAX_INTERVALS));
-                                message += "\n Minutes: " + ((averageU / 1000000000) / 60) / MAX_INTERVALS;
-                                message += "\n Hours: " + (((averageU / 1000000000) / 60) / 60) / MAX_INTERVALS;
-                                message += "\n Days: " + ((((averageU / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
-                                message += ("\nDuplicate::::\nSeconds: " + ((averageU / 1000000000) / MAX_INTERVALS));
-                                message += "\n Minutes: " + ((averageD / 1000000000) / 60) / MAX_INTERVALS;
-                                message += "\n Hours: " + (((averageD / 1000000000) / 60) / 60) / MAX_INTERVALS;
-                                message += "\n Days: " + ((((averageD / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
-                                message += "\n\n";
-                                writedToFile(location, message);
+                                message += ("\n\nAeverage Time For Input: " + inputs
+                                                        + "\n======================================================================\nSORTED::::\nSeconds: "
+                                                        + ((averageS / 1000000000) / MAX_INTERVALS));
+                                        message += "\n Minutes: " + ((averageS / 1000000000) / 60) / MAX_INTERVALS;
+                                        message += "\n Hours: " + (((averageS / 1000000000) / 60) / 60) / MAX_INTERVALS;
+                                        message += "\n Days: "
+                                                        + ((((averageS / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
+                                        message += ("\nUNSORTED::::\nSeconds: "
+                                                        + ((averageU / 1000000000) / MAX_INTERVALS));
+                                        message += "\n Minutes: " + ((averageU / 1000000000) / 60) / MAX_INTERVALS;
+                                        message += "\n Hours: " + (((averageU / 1000000000) / 60) / 60) / MAX_INTERVALS;
+                                        message += "\n Days: "
+                                                        + ((((averageU / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
+                                        message += ("\nDuplicate::::\nSeconds: "
+                                                        + ((averageD / 1000000000) / MAX_INTERVALS));
+                                        message += "\n Minutes: " + ((averageD / 1000000000) / 60) / MAX_INTERVALS;
+                                        message += "\n Hours: " + (((averageD / 1000000000) / 60) / 60) / MAX_INTERVALS;
+                                        message += "\n Days: "
+                                                        + ((((averageD / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
+                                        message += ("\nReversed::::\nSeconds: "
+                                                        + ((averageR / 1000000000) / MAX_INTERVALS));
+                                        message += "\n Minutes: " + ((averageR / 1000000000) / 60) / MAX_INTERVALS;
+                                        message += "\n Hours: " + (((averageR / 1000000000) / 60) / 60) / MAX_INTERVALS;
+                                        message += "\n Days: "
+                                                        + ((((averageR / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
+                                        message += "\n\n";
+                                        writedToFile(location, message);
                         }
-                        inputs *= MULTIPLIER;
+
+                        inputs *= BASE;
                 }
+                System.out.println("Completed");
         }
 
         protected static boolean writedToFile(String fileLocation, String message) {
@@ -482,14 +504,11 @@ public class TimeComplexity {
                         }
                 } else {
                         int[] temp = new int[inputs];
-                        ;
                         for (int i = 0; i < inputs; i++) {
                                 temp[i] = i;
                         }
                         for (int i = 0; i < temp.length; i++) {
-                                if (i == 0)
-
-                                        arr[i] = temp[(temp.length - 1) - i];
+                                arr[i] = temp[(temp.length - 1) - i];
                         }
                 }
                 return arr;

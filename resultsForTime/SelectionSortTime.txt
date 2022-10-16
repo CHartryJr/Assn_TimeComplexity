@@ -1,3 +1,5 @@
+
+ >>>>>>>>>>>>>>>Iteration 1 of input size 10. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -26,6 +28,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 2 of input size 10. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -54,6 +58,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 3 of input size 10. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -82,6 +88,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 4 of input size 10. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -110,6 +118,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 5 of input size 10. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -138,6 +148,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 6 of input size 10. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -166,6 +178,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 7 of input size 10. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -194,6 +208,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 8 of input size 10. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -222,6 +238,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 9 of input size 10. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -250,286 +268,8 @@ minutes: 0
 hours: 0
 days: 0
 
-Time With Unsorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
 
-Time With Sorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
+ >>>>>>>>>>>>>>>Iteration 10 of input size 10. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -560,7 +300,7 @@ days: 0
 
 
 
-Aeverage Time  For Run:0 Interval: 10
+Aeverage Time For Input: 10
 ======================================================================
 SORTED::::
 Seconds: 0
@@ -577,7 +317,14 @@ Seconds: 0
  Minutes: 0
  Hours: 0
  Days: 0
+Reversed::::
+Seconds: 0
+ Minutes: 0
+ Hours: 0
+ Days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 1 of input size 100. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:100
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -606,6 +353,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 2 of input size 100. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:100
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -634,6 +383,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 3 of input size 100. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:100
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -662,6 +413,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 4 of input size 100. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:100
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -690,6 +443,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 5 of input size 100. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:100
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -718,6 +473,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 6 of input size 100. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:100
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -746,6 +503,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 7 of input size 100. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:100
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -774,6 +533,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 8 of input size 100. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:100
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -802,6 +563,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 9 of input size 100. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:100
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -830,286 +593,8 @@ minutes: 0
 hours: 0
 days: 0
 
-Time With Unsorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
 
-Time With Sorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:100
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
+ >>>>>>>>>>>>>>>Iteration 10 of input size 100. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:100
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1140,7 +625,7 @@ days: 0
 
 
 
-Aeverage Time  For Run:1 Interval: 100
+Aeverage Time For Input: 100
 ======================================================================
 SORTED::::
 Seconds: 0
@@ -1157,7 +642,14 @@ Seconds: 0
  Minutes: 0
  Hours: 0
  Days: 0
+Reversed::::
+Seconds: 0
+ Minutes: 0
+ Hours: 0
+ Days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 1 of input size 1000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:1000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1186,6 +678,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 2 of input size 1000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:1000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1214,6 +708,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 3 of input size 1000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:1000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1242,6 +738,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 4 of input size 1000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:1000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1270,6 +768,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 5 of input size 1000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:1000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1298,6 +798,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 6 of input size 1000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:1000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1326,6 +828,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 7 of input size 1000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:1000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1354,6 +858,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 8 of input size 1000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:1000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1382,6 +888,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 9 of input size 1000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:1000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1410,286 +918,8 @@ minutes: 0
 hours: 0
 days: 0
 
-Time With Unsorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
 
-Time With Sorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:1000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
+ >>>>>>>>>>>>>>>Iteration 10 of input size 1000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:1000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1720,7 +950,7 @@ days: 0
 
 
 
-Aeverage Time  For Run:2 Interval: 1000
+Aeverage Time For Input: 1000
 ======================================================================
 SORTED::::
 Seconds: 0
@@ -1737,7 +967,14 @@ Seconds: 0
  Minutes: 0
  Hours: 0
  Days: 0
+Reversed::::
+Seconds: 0
+ Minutes: 0
+ Hours: 0
+ Days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 1 of input size 10000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1766,6 +1003,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 2 of input size 10000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1794,6 +1033,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 3 of input size 10000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1822,6 +1063,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 4 of input size 10000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1850,6 +1093,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 5 of input size 10000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1878,6 +1123,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 6 of input size 10000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1906,6 +1153,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 7 of input size 10000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1934,6 +1183,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 8 of input size 10000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1962,6 +1213,8 @@ minutes: 0
 hours: 0
 days: 0
 
+
+ >>>>>>>>>>>>>>>Iteration 9 of input size 10000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -1990,286 +1243,8 @@ minutes: 0
 hours: 0
 days: 0
 
-Time With Unsorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
 
-Time With Sorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Unsorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Sorted Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Duplicate Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
-Time With Reversed Inputs:10000
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-second: 0
-minutes: 0
-hours: 0
-days: 0
-
+ >>>>>>>>>>>>>>>Iteration 10 of input size 10000. <<<<<<<<<<<<<<<<<<<<
 Time With Unsorted Inputs:10000
 VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
 second: 0
@@ -2300,7 +1275,7 @@ days: 0
 
 
 
-Aeverage Time  For Run:3 Interval: 10000
+Aeverage Time For Input: 10000
 ======================================================================
 SORTED::::
 Seconds: 0
@@ -2317,4 +1292,189 @@ Seconds: 0
  Minutes: 0
  Hours: 0
  Days: 0
+Reversed::::
+Seconds: 0
+ Minutes: 0
+ Hours: 0
+ Days: 0
+
+
+ >>>>>>>>>>>>>>>Iteration 1 of input size 100000. <<<<<<<<<<<<<<<<<<<<
+Time With Unsorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 9
+minutes: 0
+hours: 0
+days: 0
+
+Time With Sorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 1
+minutes: 0
+hours: 0
+days: 0
+
+Time With Duplicate Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 1
+minutes: 0
+hours: 0
+days: 0
+
+Time With Reversed Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 2
+minutes: 0
+hours: 0
+days: 0
+
+
+ >>>>>>>>>>>>>>>Iteration 2 of input size 100000. <<<<<<<<<<<<<<<<<<<<
+Time With Unsorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 9
+minutes: 0
+hours: 0
+days: 0
+
+Time With Sorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 1
+minutes: 0
+hours: 0
+days: 0
+
+Time With Duplicate Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 1
+minutes: 0
+hours: 0
+days: 0
+
+Time With Reversed Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 2
+minutes: 0
+hours: 0
+days: 0
+
+
+ >>>>>>>>>>>>>>>Iteration 3 of input size 100000. <<<<<<<<<<<<<<<<<<<<
+Time With Unsorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 9
+minutes: 0
+hours: 0
+days: 0
+
+Time With Sorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 1
+minutes: 0
+hours: 0
+days: 0
+
+Time With Duplicate Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 2
+minutes: 0
+hours: 0
+days: 0
+
+Time With Reversed Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 2
+minutes: 0
+hours: 0
+days: 0
+
+
+ >>>>>>>>>>>>>>>Iteration 4 of input size 100000. <<<<<<<<<<<<<<<<<<<<
+Time With Unsorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 9
+minutes: 0
+hours: 0
+days: 0
+
+Time With Sorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 1
+minutes: 0
+hours: 0
+days: 0
+
+Time With Duplicate Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 1
+minutes: 0
+hours: 0
+days: 0
+
+Time With Reversed Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 2
+minutes: 0
+hours: 0
+days: 0
+
+
+ >>>>>>>>>>>>>>>Iteration 5 of input size 100000. <<<<<<<<<<<<<<<<<<<<
+Time With Unsorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 9
+minutes: 0
+hours: 0
+days: 0
+
+Time With Sorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 1
+minutes: 0
+hours: 0
+days: 0
+
+Time With Duplicate Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 1
+minutes: 0
+hours: 0
+days: 0
+
+Time With Reversed Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 2
+minutes: 0
+hours: 0
+days: 0
+
+
+ >>>>>>>>>>>>>>>Iteration 6 of input size 100000. <<<<<<<<<<<<<<<<<<<<
+Time With Unsorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 9
+minutes: 0
+hours: 0
+days: 0
+
+Time With Sorted Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 1
+minutes: 0
+hours: 0
+days: 0
+
+Time With Duplicate Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 1
+minutes: 0
+hours: 0
+days: 0
+
+Time With Reversed Inputs:100000
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+second: 2
+minutes: 0
+hours: 0
+days: 0
 
