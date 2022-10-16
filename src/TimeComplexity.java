@@ -88,8 +88,6 @@ public class TimeComplexity {
                                                                                         / 60) / 24)
                                                                         + "\n\n";
                                                         averageD += endTime - startTime;
-                                                        location = i == 0 ? location += "/SelectionSortTime.txt"
-                                                                        : location;
                                                         startTime = System.nanoTime();
                                                         SortingAlgos.selectionSort(reversed);
                                                         endTime = System.nanoTime();
@@ -172,8 +170,6 @@ public class TimeComplexity {
                                                                                         / 60) / 24)
                                                                         + "\n\n";
                                                         averageD += endTime - startTime;
-                                                        location = i == 0 ? location += "/InsertionSortTime.txt"
-                                                                        : location;
                                                         startTime = System.nanoTime();
                                                         SortingAlgos.selectionSort(reversed);
                                                         endTime = System.nanoTime();
@@ -256,8 +252,6 @@ public class TimeComplexity {
                                                                                         / 60) / 24)
                                                                         + "\n\n";
                                                         averageD += endTime - startTime;
-                                                        location = i == 0 ? location += "/MergeSortTime.txt" : location;
-                                                        startTime = System.nanoTime();
                                                         SortingAlgos.selectionSort(reversed);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Reversed Inputs:" + inputs
@@ -338,8 +332,6 @@ public class TimeComplexity {
                                                                                         / 60) / 24)
                                                                         + "\n\n";
                                                         averageD += endTime - startTime;
-                                                        location = i == 0 ? location += "/BubbleSortTime.txt"
-                                                                        : location;
                                                         startTime = System.nanoTime();
                                                         SortingAlgos.selectionSort(reversed);
                                                         endTime = System.nanoTime();
@@ -472,7 +464,6 @@ public class TimeComplexity {
                 try {
                         editor = new PrintWriter(new BufferedWriter(new FileWriter(fileLocation, true)));
                         editor.write(message);
-                        editor.flush();
                         editor.close();
                         return true;
                 } catch (Exception e) {
