@@ -1,19 +1,52 @@
 {
     "configurations": [
+        
         {
             "type": "java",
-            "name": "Launch TimeComplexity",
-            "request": "launch",
-            "mainClass": "TimeComplexity",
-            "projectName": "Assn_TimeComplexity_d2146241"
-        },
-        {
-            "type": "java",
-            "name": "Launch TimeComplexity",
+            "name": "Run Insertion",
             "request": "launch",
             "mainClass": "TimeComplexity",
             "projectName": "Assn_TimeComplexity",
-            "cwd": "${workspaceFolder}"
-        }
+            "cwd": "${workspaceFolder}",
+            "args": "0",
+            
+        },
+        {
+            "type": "java",
+            "name": "Run Bubble",
+            "request": "launch",
+            "mainClass": "TimeComplexity",
+            "projectName": "Assn_TimeComplexity",
+            "cwd": "${workspaceFolder}",
+            "args": "1" 
+        },
+        {
+            "type": "java",
+            "name": "Run Selection",
+            "request": "launch",
+            "mainClass": "TimeComplexity",
+            "projectName": "Assn_TimeComplexity",
+            "cwd": "${workspaceFolder}",
+            "args": "2" 
+        },
+        {
+            "type": "java",
+            "name": "Run Quick",
+            "request": "launch",
+            "mainClass": "TimeComplexity",
+            "projectName": "Assn_TimeComplexity",
+            "cwd": "${workspaceFolder}",
+            "args": "3" 
+        },
+        {
+            "type": "java",
+            "name": "Run Merge",
+            "request": "launch",
+            "mainClass": "TimeComplexity",
+            "projectName": "Assn_TimeComplexity",
+            "cwd": "${workspaceFolder}",
+            "args": "4" 
+        },
+       
     ]
 }

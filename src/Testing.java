@@ -1,6 +1,4 @@
 import java.nio.file.FileSystems;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Random;
 
 import org.junit.Assert;
@@ -8,65 +6,58 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
 public class Testing {
-    private final int  NUM = 1000;
-    private  int[] arr;
-    private String correct ="[";
+    private final static int  inputs = 1000;
+    private  int[] sorted;
+    private  int[] unsorted;
+    private  int[] duplicate;
+    private  int[] reverse;
+    private String correct ="";
     
     /**
      * 
      */
     @BeforeEach
     public void initEach(){
-        Random rand = new Random();
-        int limit = rand.nextInt((NUM -3))+3;
-        ArrayList <Integer>converter = new ArrayList<Integer>();
-        arr = new int[limit] ;
-        for(int i =0; i < limit; i++){
-            int x = rand.nextInt(limit);
-            converter.add(x);
-            arr[i] = x;
-        }
-        Collections.sort(converter);
-        for (Integer x : converter) {
-            correct+= (" "+ x);
-        }
-        correct += " ]";
+        sorted = createlist(0);
+        unsorted = createlist(1);
+        duplicate = createlist(2);
+        reverse = createlist(3);
+        correct =SortingAlgos.print(sorted);
     }
 
     @Test
     public void mergeSortTest() {
-        SortingAlgos.mergeSort(arr);
+        SortingAlgos.mergeSort(reverse);
         Assert.assertEquals(correct,
-        SortingAlgos.print(arr));
+        SortingAlgos.print(sorted));
     }
 
     @Test
     public void quickSortTest() {
-        SortingAlgos.quickSort(arr);
+        SortingAlgos.quickSort(reverse);
         Assert.assertEquals(correct,
-        SortingAlgos.print(arr));
+        SortingAlgos.print(sorted));
     }
 
     @Test
     public void inserstionSortTest() {
-        SortingAlgos.insertionSort(arr);
+        SortingAlgos.insertionSort(reverse);
         Assert.assertEquals(correct,
-        SortingAlgos.print(arr));
+        SortingAlgos.print(sorted));
     } 
 
     @Test
     public void selctionSortTest() {
-        SortingAlgos.selectionSort(arr);
+        SortingAlgos.selectionSort(reverse);
         Assert.assertEquals(correct,
-        SortingAlgos.print(arr));
+        SortingAlgos.print(sorted));
     } 
 
     @Test
     public void bubbleSortTest() {
-        SortingAlgos.bubbleSort(arr);
+        SortingAlgos.bubbleSort(reverse);
         Assert.assertEquals(correct,
-        SortingAlgos.print(arr));
-        
+        SortingAlgos.print(sorted));
     } 
     @Test
     public void writingTest() {
@@ -77,4 +68,22 @@ public class Testing {
         Assert.assertTrue(TimeComplexity.writedToFile(location,correct));
        Assert.assertTrue(TimeComplexity.writedToFile(location,"this is the testing page ignore"));
     } 
+    private static int[] createlist(int cat) {
+        int[] arr = new int[inputs];
+        Random rand = new Random();
+        if (cat != 3) {
+                for (int i = 0; i < inputs; i++) {
+                        arr[i] = cat == 0 ? i : cat == 1 ? rand.nextInt() : 1;
+                }
+        } else {
+                int[] temp = new int[inputs];
+                for (int i = 0; i < inputs; i++) {
+                        temp[i] = i;
+                }
+                for (int i = 0; i < temp.length; i++) {
+                        arr[i] = temp[(temp.length - 1) - i];
+                }
+        }
+        return arr;
+}
 }

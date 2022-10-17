@@ -1,7 +1,11 @@
 
 class SortingAlgos {
 	enum sortNames {
-		INSERTION, BUBBLE, SELECTION, QUICKSORT, MERGESORT
+		INSERTION, BUBBLE, SELECTION, QUICKSORT, MERGESORT;
+		private  int value;
+		private void ordinace(){
+			this.value =ordinal();
+		}
 	}
 
 	public static String print(int[] numbers) {

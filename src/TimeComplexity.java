@@ -3,20 +3,23 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.nio.file.FileSystems;
 import java.util.Random;
+/**
+ * @author Carl Hartry Jr W/contributation From Benjamin Strait
+ * @CHartryJr
+ * @Benjamin-Strait
+ */
 
 public class TimeComplexity {
         private static final int BASE = 10;
         private static final int MAX_INTERVALS = 10;
-        private static final int POWER = 4;
-        private static int inputs = 10;
-
+        private static final int POWER = 5;
+        private static int inputs = 100;
+        // inputs * base^power = max input size
         public static void main(String[] args) {
-
+                SortingAlgos.sortNames x = SortingAlgos.sortNames.values()[Integer.parseInt(args[0])];
                 long startTime;
                 long endTime;
                 for (int h = 0; h <= POWER; h++) {
-
-                        for (SortingAlgos.sortNames x : SortingAlgos.sortNames.values()) {
                                 long averageU = 0;
                                 long averageS = 0;
                                 long averageD = 0;
@@ -30,7 +33,7 @@ public class TimeComplexity {
                                         int[] unsorted = createlist(1);
                                         int[] duplicate = createlist(2);
                                         int[] reversed = createlist(3);
-                                        message +="\n >>>>>>>>>>>>>>>Iteration "+(i+1)+" of input size "+inputs+"<<<<<<<<<<<<<<<<<<<<\n";
+                                        message +="\n>>>>>>>>>>>>>>>Iteration "+(i+1)+" of input size "+inputs+"<<<<<<<<<<<<<<<<<<<<\n";
 
                                         switch (x) {
                                                 case SELECTION:
@@ -118,7 +121,7 @@ public class TimeComplexity {
 
                                                 case INSERTION:
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(unsorted);
+                                                        SortingAlgos.insertionSort(unsorted);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Unsorted Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -137,7 +140,7 @@ public class TimeComplexity {
                                                                         + "\n\n";
                                                         averageU += endTime - startTime;
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(sorted);
+                                                        SortingAlgos.insertionSort(sorted);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Sorted Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -156,7 +159,7 @@ public class TimeComplexity {
                                                                         + "\n\n";
                                                         averageS += endTime - startTime;
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(duplicate);
+                                                        SortingAlgos.insertionSort(duplicate);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Duplicate Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -175,7 +178,7 @@ public class TimeComplexity {
                                                                         + "\n\n";
                                                         averageD += endTime - startTime;
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(reversed);
+                                                        SortingAlgos.insertionSort(reversed);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Reversed Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -201,7 +204,7 @@ public class TimeComplexity {
 
                                                 case MERGESORT:
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(unsorted);
+                                                        SortingAlgos.mergeSort(unsorted);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Unsorted Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -220,7 +223,7 @@ public class TimeComplexity {
                                                                         + "\n\n";
                                                         averageU += endTime - startTime;
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(sorted);
+                                                        SortingAlgos.mergeSort(sorted);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Sorted Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -239,7 +242,7 @@ public class TimeComplexity {
                                                                         + "\n\n";
                                                         averageS += endTime - startTime;
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(duplicate);
+                                                        SortingAlgos.mergeSort(duplicate);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Duplicate Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -257,7 +260,7 @@ public class TimeComplexity {
                                                                                         / 60) / 24)
                                                                         + "\n\n";
                                                         averageD += endTime - startTime;
-                                                        SortingAlgos.selectionSort(reversed);
+                                                        SortingAlgos.mergeSort(reversed);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Reversed Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -282,7 +285,7 @@ public class TimeComplexity {
 
                                                 case BUBBLE:
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(unsorted);
+                                                        SortingAlgos.bubbleSort(unsorted);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Unsorted Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -301,7 +304,7 @@ public class TimeComplexity {
                                                                         + "\n\n";
                                                         averageU += endTime - startTime;
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(sorted);
+                                                        SortingAlgos.bubbleSort(sorted);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Sorted Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -320,7 +323,7 @@ public class TimeComplexity {
                                                                         + "\n\n";
                                                         averageS += endTime - startTime;
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(duplicate);
+                                                        SortingAlgos.bubbleSort(duplicate);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Duplicate Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -339,7 +342,7 @@ public class TimeComplexity {
                                                                         + "\n\n";
                                                         averageD += endTime - startTime;
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(reversed);
+                                                        SortingAlgos.bubbleSort(reversed);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Reversed Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -365,7 +368,7 @@ public class TimeComplexity {
 
                                                 case QUICKSORT:
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(unsorted);
+                                                        SortingAlgos.quickSort(unsorted);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Unsorted Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -384,7 +387,7 @@ public class TimeComplexity {
                                                                         + "\n\n";
                                                         averageU += endTime - startTime;
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(sorted);
+                                                        SortingAlgos.quickSort(sorted);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Sorted Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -403,7 +406,7 @@ public class TimeComplexity {
                                                                         + "\n\n";
                                                         averageS += endTime - startTime;
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(duplicate);
+                                                        SortingAlgos.quickSort(duplicate);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Duplicate Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -422,7 +425,7 @@ public class TimeComplexity {
                                                                         + "\n\n";
                                                         averageD += endTime - startTime;
                                                         startTime = System.nanoTime();
-                                                        SortingAlgos.selectionSort(reversed);
+                                                        SortingAlgos.quickSort(reversed);
                                                         endTime = System.nanoTime();
                                                         message += ("Time With Reversed Inputs:" + inputs
                                                                         + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
@@ -474,7 +477,6 @@ public class TimeComplexity {
                                                         + ((((averageR / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
                                         message += "\n\n";
                                         writedToFile(location, message);
-                        }
 
                         inputs *= BASE;
                 }
@@ -500,7 +502,7 @@ public class TimeComplexity {
                 Random rand = new Random();
                 if (cat != 3) {
                         for (int i = 0; i < inputs; i++) {
-                                arr[i] = cat == 0 ? i : cat == 1 ? rand.nextInt() : 1;
+                                arr[i] = cat == 0 ? i : cat == 1 ? (rand.nextInt(inputs-4)+4) : 1;
                         }
                 } else {
                         int[] temp = new int[inputs];
