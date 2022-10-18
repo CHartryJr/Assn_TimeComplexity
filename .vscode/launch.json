@@ -1,6 +1,12 @@
 {
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "Launch TimeComplexity",
+            "request": "launch",
+            "mainClass": "TimeComplexity",
+            "projectName": "Assn_TimeComplexity_d2146241"
+        },
         {
             "type": "java",
             "name": "Run Insertion",
@@ -8,8 +14,7 @@
             "mainClass": "TimeComplexity",
             "projectName": "Assn_TimeComplexity",
             "cwd": "${workspaceFolder}",
-            "args": "0",
-            
+            "args": "0"
         },
         {
             "type": "java",
@@ -18,7 +23,7 @@
             "mainClass": "TimeComplexity",
             "projectName": "Assn_TimeComplexity",
             "cwd": "${workspaceFolder}",
-            "args": "1" 
+            "args": "1"
         },
         {
             "type": "java",
@@ -27,7 +32,7 @@
             "mainClass": "TimeComplexity",
             "projectName": "Assn_TimeComplexity",
             "cwd": "${workspaceFolder}",
-            "args": "2" 
+            "args": "2"
         },
         {
             "type": "java",
@@ -36,7 +41,7 @@
             "mainClass": "TimeComplexity",
             "projectName": "Assn_TimeComplexity",
             "cwd": "${workspaceFolder}",
-            "args": "3" 
+            "args": "3"
         },
         {
             "type": "java",
@@ -45,8 +50,7 @@
             "mainClass": "TimeComplexity",
             "projectName": "Assn_TimeComplexity",
             "cwd": "${workspaceFolder}",
-            "args": "4" 
-        },
-       
+            "args": "4"
+        }
     ]
 }
