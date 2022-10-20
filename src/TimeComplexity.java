@@ -12,303 +12,59 @@ import java.util.Random;
 
 public class TimeComplexity {
         private static final int BASE = 10;
-        private static final int MAX_INTERVALS = 10;
+        private static final int MAX_INTERVALS = 2;
         private static final int POWER = 5;
         private static int inputs = 1000;
+        private static String inputF = "";
+
         // inputs * base^power = max input size
         public static void main(String[] args) {
-                long startTime;
-                long endTime;
                 long time;
                 for (int h = 0; h <= POWER; h++) {
+                        
+                        String message = "";
+                        inputF = String.format("%,d\n", inputs);
+                        for (SortingAlgos x : SortingAlgos.values()) {
                         long averageU = 0;
                         long averageS = 0;
                         long averageD = 0;
                         long averageR = 0;
-                        String message = "";
-                        
-                        for (SortingAlgos.sortNames x : SortingAlgos.sortNames.values()) {
-                                String location = FileSystems.getDefault().getPath("resultsForTime").toAbsolutePath()
-                                        .toString();
+                                String location = FileSystems.getDefault().getPath("results").toAbsolutePath()
+                                                .toString();
                                 for (int i = 0; i < MAX_INTERVALS; i++) {
 
                                         int[] sorted = createlist(0);
                                         int[] unsorted = createlist(1);
                                         int[] duplicate = createlist(2);
                                         int[] reversed = createlist(3);
-                                        message += "\n>>>>>>>>>>>>>>>Iteration " + (i + 1) + " of input size " + inputs
-                                                        + "<<<<<<<<<<<<<<<<<<<<\n";
+                                        message += "\n>>>>>>>>>>>>>Iteration " + (i + 1) + " of input size " + inputF
+                                                        + "<<<<<<<<<<<<<<<<<<\n";
+                                        time = getTime(x, sorted);
+                                        message += time != -1 ? appendTimeMessage(time, "Sorted")
+                                                        : "\nFailed with Sorted input " + inputF + "StackOverFlow\n";
+                                        averageS += time;
+                                        time = getTime(x, unsorted);
+                                        message += time != -1 ? appendTimeMessage(time, "Unsorted")
+                                                        : "\nFailed with Unsorted at input " + inputF + "StackOverFlow\n";
+                                        averageU += time;
+                                        time = getTime(x, duplicate);
+                                        message += time != -1 ? appendTimeMessage(time, "Duplicated")
+                                                        : "\nFailed with Duplicated input " + inputF + "StackOverFlow\n";
+                                        averageD += time;
+                                        time = getTime(x, reversed);
+                                        message += time != -1 ? appendTimeMessage(time, "Reversed")
+                                                        : "\nFailed with Reversed input " + inputF + "StackOverFlow\n";
+                                        averageR += time;
 
-                                        switch (x) {
-                                                case SELECTION:
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.selectionSort(sorted);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Sorted");
-                                                                averageS += time;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with sorted array";
-                                                        }
-
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.selectionSort(unsorted);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Usorted");
-                                                                averageU += time;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with unsorted array";
-                                                        }
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.selectionSort(duplicate);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Duplicated");
-                                                                averageD += endTime - startTime;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with Dupicated array";
-                                                        }
-
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.selectionSort(reversed);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Reversed");
-                                                                averageR += endTime - startTime;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " of Reversed array";
-                                                        }
-
-                                                        location = i == 0 ? location += "/SelectionSortTime.txt"
-                                                                        : location;
-
-                                                        writedToFile((location), message);
-                                                        break;
-
-                                                case INSERTION:
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.insertionSort(sorted);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Sorted");
-                                                                averageS += time;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with sorted array";
-                                                        }
-
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.insertionSort(unsorted);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Usorted");
-                                                                averageU += time;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with unsorted array";
-                                                        }
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.insertionSort(duplicate);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Duplicated");
-                                                                averageD += endTime - startTime;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with Dupicated array";
-                                                        }
-
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.insertionSort(reversed);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Reversed");
-                                                                averageR += endTime - startTime;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " of Reversed array";
-                                                        }
-                                                        location = i == 0 ? location += "/InsertionSortTime.txt"
-                                                                        : location;
-                                                        writedToFile((location), message);
-
-                                                        break;
-
-                                                case MERGESORT:
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.mergeSort(sorted);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Sorted");
-                                                                averageS += time;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with sorted array";
-                                                        }
-
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.mergeSort(unsorted);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Usorted");
-                                                                averageU += time;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with unsorted array";
-                                                        }
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.mergeSort(duplicate);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Duplicated");
-                                                                averageD += endTime - startTime;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with Dupicated array";
-                                                        }
-
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.mergeSort(reversed);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Reversed");
-                                                                averageR += endTime - startTime;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " of Reversed array";
-                                                        }
-
-                                                        location = i == 0 ? location += "/MergeSortTime.txt" : location;
-                                                        writedToFile((location), message);
-                                                        break;
-
-                                                case BUBBLE:
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.bubbleSort(sorted);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Sorted");
-                                                                averageS += time;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with sorted array";
-                                                        }
-
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.bubbleSort(unsorted);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Usorted");
-                                                                averageU += time;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with unsorted array";
-                                                        }
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.bubbleSort(duplicate);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Duplicated");
-                                                                averageD += endTime - startTime;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with Dupicated array";
-                                                        }
-
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.bubbleSort(reversed);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Reversed");
-                                                                averageR += endTime - startTime;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " of Reversed array";
-                                                        }
-
-                                                        location = i == 0 ? location += "/BubbleSortTime.txt"
-                                                                        : location;
-                                                        writedToFile((location), message);
-                                                        break;
-
-                                                case QUICKSORT:
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.selectionSort(sorted);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Sorted");
-                                                                averageS += time;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with sorted array";
-                                                        }
-
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.selectionSort(unsorted);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Usorted");
-                                                                averageU += time;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with unsorted array";
-                                                        }
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.selectionSort(duplicate);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Duplicated");
-                                                                averageD += endTime - startTime;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " with Dupicated array";
-                                                        }
-
-                                                        try {
-                                                                startTime = System.nanoTime();
-                                                                SortingAlgos.selectionSort(reversed);
-                                                                endTime = System.nanoTime();
-                                                                time = endTime - startTime;
-                                                                message += appendTimeMessage(time, "Reversed");
-                                                                averageR += endTime - startTime;
-                                                        } catch (StackOverflowError e) {
-                                                                message += "Could not preform with given data. Stack overflow occured with input size "
-                                                                                + inputs + " of Reversed array";
-                                                        }
-                                                        location = i == 0 ? location += "/QuickSortTime.txt" : location;
-                                                        writedToFile((location), message);
-
-                                                        break;
-                                        }
+                                        location = i == 0 ? location += "/" + x + "TimeResults.txt"
+                                                        : location;
+                                        writedToFile((location), message);
                                         message = "";
                                 }
-                                message += appendAveMessage(message, averageS, averageU, averageD, averageR);
+
+                                message += appendAveMessage(message, new long[]{averageS,averageU,averageD,averageR});
                                 writedToFile(location, message);
-                                message="";
+                                message = "";
                         }
                         inputs *= BASE;
                 }
@@ -334,7 +90,7 @@ public class TimeComplexity {
                 Random rand = new Random();
                 if (cat < 3) {
                         for (int i = 0; i < inputs; i++) {
-                                arr[i] = cat == 0 ? i : cat == 1 ? (rand.nextInt(inputs - 4) + 4) : cat== 2? 1:1;
+                                arr[i] = cat == 0 ? i : cat == 1 ? (rand.nextInt(inputs - 4) + 4) : cat == 2 ? 1 : 1;
                         }
                 } else {
                         int[] temp = new int[inputs];
@@ -349,65 +105,65 @@ public class TimeComplexity {
         }
 
         private static String appendTimeMessage(long time, String arrName) {
-                String message ="";
-                message += ("Time With" + arrName + " Inputs:" + inputs
-                                + "\nVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
-                
-                message += ("nanoseconds: " + (time))
-                                + "\n";
-
-                message += ("seconds: " + (time) / 1000000000)
-                                + "\n";
-
-                message += ("minutes: "
-                                + ((time) / 1000000000) / 60)
-                                + "\n";
-
-                message += ("hours: "
-                                + (((time) / 1000000000) / 60)
-                                                / 60)
-                                + "\n";
-                message += ("days: "
-                                + ((((time) / 1000000000) / 60)
-                                                / 60) / 24)
-                                + "\n\n";
-
+                String message = "";
+                String timeF = String.format("%,d", time);
+                message += ("\nTime With " + arrName + " Inputs: " + inputF
+                                + "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV\n");
+                timeF = String.format("%,d\n", time);
+                message += ("nanoseconds: " + timeF + "\n");
+                time /= 1000000000;
+                timeF = String.format("%,d\n", time);
+                message += ("seconds: " + timeF + "\n");
+                time /= 60;
+                timeF = String.format("%,d\n", time);
+                message += ("minutes: " + timeF + "\n");
+                time /= 60;
+                timeF = String.format("%,d\n", time);
+                message += ("hours: " + timeF + "\n");
+                time /= 24;
+                timeF = String.format("%,d\n", time);
+                message += ("days: " + timeF + "\n\n");
                 return message;
         }
 
-        private static String appendAveMessage(String message, long averageS, long averageU, long averageD,
-                        long averageR) {
-                message += ("\nAeverage Time For Input: " + inputs
-                                + "\n======================================================================\nSORTED::::\nNanoseconds: "
-                                + (averageS / MAX_INTERVALS));
-                message += "\n Seconds: " + ((averageS / 1000000000)) / MAX_INTERVALS;
-                message += "\n Minutes: " + ((averageS / 1000000000) / 60) / MAX_INTERVALS;
-                message += "\n Hours: " + (((averageS / 1000000000) / 60) / 60) / MAX_INTERVALS;
+        private static String appendAveMessage(String message, long [] averages) {
+                int count = 0;
+                message+=("\nAeverage Time For Input: " + inputF
+                + "======================================================================\n");
+                for(long x :averages){
+                String type  = count ==0 ?"SORTED": count ==1?"UNSORTED":count==2?"Duplicated":count==3?"Reversed":"";
+                long time = x / MAX_INTERVALS;
+                String timeF = String.format("%,d\n", time);
+                message += ("\n"+type+"::::\nNanoseconds: "+ timeF);
+                time /= 1000000000;
+                timeF = String.format("%,d\n", (time));
+                message += "\n Seconds: " + timeF;
+                time /= 60;
+                timeF = String.format("%,d\n", (time));
+                message += "\n Minutes: " + timeF;
+                time /= 60;
+                timeF = String.format("%,d\n", (time));
+                message += "\n Hours: " + timeF;
+                time /= 24;
+                timeF = String.format("%,d\n", (time));
                 message += "\n Days: "
-                                + ((((averageS / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
-                message += ("\nUNSORTED::::\nNanoseconds: "
-                                + ((averageU / MAX_INTERVALS)));
-                message += "\n Seconds"+((averageU / 1000000000) / MAX_INTERVALS);
-                message += "\n Minutes: " + ((averageU / 1000000000) / 60) / MAX_INTERVALS;
-                message += "\n Hours: " + (((averageU / 1000000000) / 60) / 60) / MAX_INTERVALS;
-                message += "\n Days: "
-                                + ((((averageU / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
-                message += ("\nDuplicate::::\nNanoseconds: "
-                                + (averageD));
-                message += "\n Seconds: " + ((averageD / 1000000000)) / MAX_INTERVALS;
-                message += "\n Minutes: " + ((averageD / 1000000000) / 60) / MAX_INTERVALS;
-                message += "\n Hours: " + (((averageD / 1000000000) / 60) / 60) / MAX_INTERVALS;
-                message += "\n Days: "
-                                + ((((averageD / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
-                message += ("\nReversed::::\nNanoseconds: "
-                                + (averageR / MAX_INTERVALS));
-                message += "\n Minutes: " + ((averageR / 1000000000)) / MAX_INTERVALS;
-                message += "\n Minutes: " + ((averageR / 1000000000) / 60) / MAX_INTERVALS;
-                message += "\n Hours: " + (((averageR / 1000000000) / 60) / 60) / MAX_INTERVALS;
-                message += "\n Days: "
-                                + ((((averageR / 1000000000) / 60) / 60) / 24) / MAX_INTERVALS;
-                message += "\n\n";
-                return message;
+                                + timeF;
+                count ++;
+                }
+                return message;  
+        }
+
+        private static long getTime(SortingAlgos x, int[] arr) {
+                long time = 0;
+                try {
+                        long startTime = System.nanoTime();
+                        x.sort(arr);
+                        long endTime = System.nanoTime();
+                        time = endTime - startTime;
+                } catch (StackOverflowError e) {
+                        return -1;
+                }
+                return time;
         }
 
 }
