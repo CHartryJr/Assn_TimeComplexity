@@ -12,7 +12,7 @@ import java.util.Random;
 
 public class TimeComplexity {
         private static final int BASE = 10;
-        private static final int MAX_INTERVALS = 2;
+        private static final int MAX_INTERVALS = 10;
         private static final int POWER = 5;
         private static int inputs = 1000;
         private static String inputF = "";
@@ -165,5 +165,4 @@ public class TimeComplexity {
                 }
                 return time;
         }
-
 }
