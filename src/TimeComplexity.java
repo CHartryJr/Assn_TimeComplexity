@@ -24,7 +24,7 @@ public class TimeComplexity {
                         
                         String message = "";
                         inputF = String.format("%,d\n", inputs);
-                        for (SortingAlgos x : SortingAlgos.values()) {
+                        for (IterativeSortingAlgos x : IterativeSortingAlgos.values()) {
                         long averageU = 0;
                         long averageS = 0;
                         long averageD = 0;
@@ -153,7 +153,7 @@ public class TimeComplexity {
                 return message;  
         }
 
-        private static long getTime(SortingAlgos x, int[] arr) {
+        private static long getTime(IterativeSortingAlgos x, int[] arr) {
                 long time = 0;
                 try {
                         long startTime = System.nanoTime();
